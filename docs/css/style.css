@@ -1,0 +1,42 @@
+html,
+body {
+  font-family: 'Montserrat', sans-serif !important;
+}
+body {
+  background-color: #000 !important;
+  color: #14a2f4 !important;
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  outline: none;
+  overflow: hidden;
+  display: block;
+}
+.navbar {
+  background-color: #000;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1920px;
+}
+.navbar a {
+  font-weight: 300;
+  color: #287ac3 !important;
+  transition: all 0.2s linear;
+  outline: none;
+  text-decoration: none;
+}
+.navbar a.active {
+  font-weight: 500;
+  color: #45b5f6 !important;
+}
+.navbar .navbar-brand,
+.navbar .navbar-brand:hover {
+  font-weight: 600;
+  color: #14a2f4 !important;
+}
+.navbar a:not(.navbar-brand):hover {
+  color: #45b5f6 !important;
+}

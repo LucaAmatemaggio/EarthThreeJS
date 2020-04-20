@@ -1,0 +1,50 @@
+@import "colors.less";
+@import "font.less";
+
+body {
+  background-color: @bgColor!important;
+  color: @txtColor!important;
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+
+  outline:none;
+  overflow: hidden;
+  display: block;
+
+}
+
+.navbar {
+
+  background-color: @bgColor;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1920px;
+
+  a {
+    font-weight: @fontLight;
+    color: @color-4!important;
+    transition: all .2s linear;
+    outline: none;
+    text-decoration: none;
+  }
+
+  a.active {
+    font-weight: @fontNormal;
+    color: lighten(@txtColor, 10%)!important;
+  }
+
+  .navbar-brand,
+  .navbar-brand:hover {
+    font-weight: @fontBrand;
+    color: @color-5!important;
+  }
+
+  a:not(.navbar-brand):hover {
+    color: lighten(@txtColor, 10%)!important;
+  }  
+}
